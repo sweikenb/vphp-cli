@@ -31,10 +31,26 @@ Depending on your environment you have to edit different profile files such as:
 When you opened the proper profile file, add the following line at the end of the file:
 
 ```bash
+# basic alias
 alias php="/usr/local/bin/vphp-cli"
 ```
 
 Save and close the file and do not forget to **restart your terminal session**.
+
+
+### Dealing with 3prd party tools such as composer
+
+If you want to let 3rd party tools use the proper PHP version aswell, simply add additional aliases with the previous _php_ alias :
+
+```bash
+# basic alias
+alias php="/usr/local/bin/vphp-cli"
+
+# 3rd party tools
+alias composer="php /usr/local/bin/composer.phar"
+alias magerun2="php /usr/local/bin/n98-magerun2.phar"
+# ...
+```
 
 
 ## Usage
