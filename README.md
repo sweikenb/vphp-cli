@@ -13,8 +13,14 @@ This can be done very easy by following the next steps:
 ### Download
 
 ```bash
-curl "https://raw.githubusercontent.com/sweikenb/vphp-cli/master/vphp.sh" --output /usr/local/bin/vphp-cli
-chmod +x /usr/local/bin/vphp-cli
+# Download
+sudo curl "https://raw.githubusercontent.com/sweikenb/vphp-cli/master/vphp.sh" --output /usr/local/bin/vphp-cli
+
+# Make executable
+sudo chmod +x /usr/local/bin/vphp-cli
+
+# Add to your profile
+echo 'alias php="/usr/local/bin/vphp-cli"' >> ~/.zshrc
 ```
 
 
